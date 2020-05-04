@@ -19,9 +19,9 @@ public class Xpp3Demo {
 
     @Test
     public void testXpp3Read() throws IOException, XmlPullParserException {
-        File pom = new File("src\\main\\resources\\xml\\pom.xml");
-        //File pom = new File("D:\\IdeaProject\\xpp3_xml_reader\\src\\main\\resources\\xml\\hibernate-2.1.8-atlassian-34.pom");
-        //File pom = new File("D:\\IdeaProject\\xpp3_xml_reader\\src\\main\\resources\\xml\\antlr-2.7.7.redhat-7.pom");
+        //File pom = new File("src\\main\\resources\\xml\\pom.xml");
+        File pom = new File("src\\main\\resources\\xml\\hibernate-2.1.8-atlassian-34.pom");
+        //File pom = new File("src\\main\\resources\\xml\\antlr-2.7.7.redhat-7.pom");
         MavenXpp3Reader pomReader = new MavenXpp3Reader();
         Model model = pomReader.read(new FileReader(pom));
 
